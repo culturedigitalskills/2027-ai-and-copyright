@@ -1,0 +1,31 @@
+media: episodes/fig
+settings:
+  commit:
+    identity: user
+content:
+  - name: episodes
+    label: Episodes
+    type: collection
+    path: episodes
+    fields:
+      - name: title
+        type: string
+      - name: teaching
+        type: number
+      - name: exercises
+        type: number
+      - name: body
+        type: code
+        options:
+          format: markdown
+  - name: learners
+    label: Learner pages
+    type: collection
+    path: learners
+    fields:
+      - name: title
+        type: string
+      - name: body
+        type: code
+        options:
+          format: markdown
