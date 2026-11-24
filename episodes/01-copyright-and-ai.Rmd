@@ -23,8 +23,6 @@ exercises: 15
 
 ## Introduction
 
-Test.
-
 ## Basics of copyright, licences and contracts
 
 
