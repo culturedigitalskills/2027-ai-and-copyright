@@ -17,7 +17,7 @@ content:
       - name: exercises
         type: number
       - name: body
-        type: code
+        type: rich-text
         options:
           format: markdown
   - name: learners
@@ -28,6 +28,6 @@ content:
       - name: title
         type: string
       - name: body
-        type: code
+        type: rich-text
         options:
           format: markdown
