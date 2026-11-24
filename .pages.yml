@@ -1,4 +1,6 @@
-media: episodes/fig
+media:
+  input: episodes/fig
+  output: fig
 settings:
   commit:
     identity: user
