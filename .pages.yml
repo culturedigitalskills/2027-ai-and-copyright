@@ -7,6 +7,8 @@ content:
     label: Episodes
     type: collection
     path: episodes
+    format: yaml-frontmatter
+    filename: "{primary}.Rmd"
     fields:
       - name: title
         type: string
