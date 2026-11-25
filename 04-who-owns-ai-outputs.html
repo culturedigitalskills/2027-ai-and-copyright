@@ -337,7 +337,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Who owns what the AI produces?</h1>
-        <p>Last updated on 2026-11-24 |
+        <p>Last updated on 2026-11-25 |
 
         <a href="https://github.com/culturedigitalskills/2027-ai-and-copyright/edit/main/episodes/04-who-owns-ai-outputs.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -381,7 +381,36 @@ outputs.</li>
 <hr class="half-width"><!-- TODO (co-design): the UK position (including computer-generated works) and how it differs elsewhere; note that the law is changing --></section><section><h2 class="section-heading" id="similarity-to-existing-works">Similarity to existing works<a class="anchor" aria-label="anchor" href="#similarity-to-existing-works"></a></h2>
 <hr class="half-width"><!-- TODO (co-design): when outputs can copy or closely resemble existing works, and how to check --></section><section><h2 class="section-heading" id="crediting-and-disclosing-ai-use-in-publications">Crediting and disclosing AI use in publications<a class="anchor" aria-label="anchor" href="#crediting-and-disclosing-ai-use-in-publications"></a></h2>
 <hr class="half-width"><!-- TODO (co-design): publisher and funder policies on AI, and how to describe AI use in methods, captions and acknowledgements --></section><section><h2 class="section-heading" id="an-arts-and-humanities-example">An arts and humanities example<a class="anchor" aria-label="anchor" href="#an-arts-and-humanities-example"></a></h2>
-<hr class="half-width"><!-- TODO (co-design): add an arts and humanities example, e.g. a collection, archive or corpus --><div id="challenge-1-how-would-you-credit-ai" class="callout challenge">
+<hr class="half-width"><!-- Running example, continued from episode 3 --><p>DINOv2 has now processed the 40,000 photographs on Isambard-AI. You
+have two kinds of output:</p>
+<ul><li>
+<strong>Embeddings:</strong> a long list of numbers for each
+photograph, describing its visual features. They are not pictures, and
+you cannot read them like an image.</li>
+<li>
+<strong>Your findings:</strong> the clusters of similar images, and
+what you conclude from them about photographic styles and the reuse of
+images.</li>
+</ul><p>Who owns these? Your interpretation and your writing about the
+clusters are your own work, like any other research. The embeddings are
+less clear. They are produced automatically, and it is an open question
+whether they attract copyright at all, or whether they could count as
+reproducing the photographs they describe. DINOv2’s Apache 2.0 licence
+does not claim ownership of what you produce with it.</p>
+<!-- TODO (co-design): check the current UK position on computer-generated works before teaching this -->
+<p>Whatever the legal position, describe your AI use clearly so that
+others can follow and repeat your method. A methods statement might
+read:</p>
+<blockquote>
+<p>Visual features were extracted using DINOv2 (ViT-L/14, Meta, Apache
+2.0 licence) run on the Isambard-AI supercomputer. Images were grouped
+using [clustering method]. All interpretation of the clusters is the
+author’s own.</p>
+</blockquote>
+<p>Note the exact model version and its licence, and acknowledge
+Isambard-AI as its operators request. Their documentation gives the
+wording to use.</p>
+<div id="challenge-1-how-would-you-credit-ai" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
@@ -482,8 +511,8 @@ any links that you are not going to use.
   "url": "https://culturedigitalskills.github.io/2027-ai-and-copyright/04-who-owns-ai-outputs.html",
   "identifier": "https://culturedigitalskills.github.io/2027-ai-and-copyright/04-who-owns-ai-outputs.html",
   "dateCreated": "2026-11-21",
-  "dateModified": "2026-11-24",
-  "datePublished": "2026-11-24"
+  "dateModified": "2026-11-25",
+  "datePublished": "2026-11-25"
 }
 
   </script><script>

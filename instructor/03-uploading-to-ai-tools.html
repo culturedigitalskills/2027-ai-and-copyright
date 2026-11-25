@@ -337,7 +337,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>What happens when I upload material to an AI tool?</h1>
-        <p>Last updated on 2026-11-24 |
+        <p>Last updated on 2026-11-25 |
 
         <a href="https://github.com/culturedigitalskills/2027-ai-and-copyright/edit/main/episodes/03-uploading-to-ai-tools.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -383,7 +383,71 @@ material.</li>
 <hr class="half-width"><!-- TODO (co-design): what to look for in terms of service: licences you grant, storage, sharing and where data is processed --></section><section><h2 class="section-heading" id="is-uploaded-content-used-for-training">Is uploaded content used for training?<a class="anchor" aria-label="anchor" href="#is-uploaded-content-used-for-training"></a></h2>
 <hr class="half-width"><!-- TODO (co-design): how to check training settings and opt-outs, and how they differ between free, paid and institutional versions --></section><section><h2 class="section-heading" id="confidentiality-and-keeping-control-of-your-material">Confidentiality and keeping control of your material<a class="anchor" aria-label="anchor" href="#confidentiality-and-keeping-control-of-your-material"></a></h2>
 <hr class="half-width"><!-- TODO (co-design): risks for unpublished, licensed or confidential material, and options such as local models and institutional tools --></section><section><h2 class="section-heading" id="an-arts-and-humanities-example">An arts and humanities example<a class="anchor" aria-label="anchor" href="#an-arts-and-humanities-example"></a></h2>
-<hr class="half-width"><!-- TODO (co-design): add an arts and humanities example, e.g. a collection, archive or corpus --><div id="challenge-1-compare-the-terms-of-two-ai-tools" class="callout challenge">
+<hr class="half-width"><!-- Running example, continued from episode 2 --><p>Running DINOv2 over 40,000 photographs is slow on a laptop but fast
+on a GPU. <strong>Isambard-AI</strong>, the national AI supercomputer at
+the University of Bristol, is one place UK researchers can do this free
+of charge. You apply through the AI Research Resource (AIRR) Gateway
+route, which is open all year.</p>
+<p>Uploading the photographs to Isambard-AI means accepting its Access
+Terms and Data Processing Terms. Press photographs often show
+identifiable people, and some may reveal political opinions or religious
+beliefs, for example at a rally or a church event. Under UK GDPR, that
+is <em>special category</em> data. Isambard’s terms set out who is
+responsible:</p>
+<ul><li>
+<strong>Your university is responsible.</strong> It is the <em>data
+controller</em>. The University of Bristol, which runs Isambard, is only
+the <em>data processor</em> and acts on your instructions.</li>
+<li>
+<strong>Special category data is allowed</strong>, but you must have
+a lawful basis for processing it when you apply. In practice, this means
+ethics approval and usually a data protection impact assessment
+(DPIA).</li>
+<li>
+<strong>Getting your data there safely is up to you.</strong>
+Bristol’s security measures apply to the system itself, not to how you
+transfer data to or from it.</li>
+<li>
+<strong>Data stays in the UK</strong> unless you authorise
+otherwise.</li>
+<li>
+<strong>Keep your own copy.</strong> You must keep complete backups,
+and Bristol deletes your data within 60 days of the project ending.</li>
+</ul><div class="section level3">
+<h3 id="same-model-two-choices">Same model, two choices<a class="anchor" aria-label="anchor" href="#same-model-two-choices"></a></h3>
+<p>How you run DINOv2 makes a big difference.</p>
+<p><strong>Option A: run DINOv2 on Isambard-AI.</strong> You download
+the model weights, for example from Hugging Face, onto Isambard-AI and
+run the model there. Your images never leave the system. Everything
+stays within Isambard’s terms, in the UK, under your university’s
+control.</p>
+<p><strong>Option B: send images to a hosted API.</strong> You call
+DINOv2, or a similar model, through someone else’s online service. Every
+image you send leaves Isambard. Isambard’s terms no longer cover it,
+Bristol’s security does not apply, and you would need a separate data
+agreement with the API provider. If that provider is outside the UK, it
+is also an international transfer. It may also count as passing copies
+of the photographs to a third party, which the copyright exception in
+episode 2 does not cover.</p>
+<p>Because DINOv2 is open-weight, you can choose Option A: <strong>bring
+the model to the data, not the data to the model</strong>. With a closed
+model that is only available through an API, you would have no such
+choice.</p>
+<div id="this-is-not-legal-advice" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="this-is-not-legal-advice" class="callout-inner">
+<h3 class="callout-title">This is not legal advice</h3>
+<div class="callout-content">
+<p>These points summarise UK law and Isambard’s published terms as of
+November 2026. For a real project, talk to your institution’s copyright
+librarian and data protection officer before you start.</p>
+</div>
+</div>
+</div>
+<div id="challenge-1-compare-the-terms-of-two-ai-tools" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
@@ -401,7 +465,7 @@ tools</h3>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <!-- TODO (co-design): add notes on possible answers, or leave empty for discussion exercises -->
 </div>
@@ -425,6 +489,7 @@ tools</h3>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
+</div>
 </section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter Bottom"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="../instructor/02-can-i-use-this-material.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
@@ -485,8 +550,8 @@ any links that you are not going to use.
   "url": "https://culturedigitalskills.github.io/2027-ai-and-copyright/instructor/03-uploading-to-ai-tools.html",
   "identifier": "https://culturedigitalskills.github.io/2027-ai-and-copyright/instructor/03-uploading-to-ai-tools.html",
   "dateCreated": "2026-11-21",
-  "dateModified": "2026-11-24",
-  "datePublished": "2026-11-24"
+  "dateModified": "2026-11-25",
+  "datePublished": "2026-11-25"
 }
 
   </script><script>

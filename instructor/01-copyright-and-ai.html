@@ -337,7 +337,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>AI and copyright: what does copyright mean when I use AI?</h1>
-        <p>Last updated on 2026-11-24 |
+        <p>Last updated on 2026-11-25 |
 
         <a href="https://github.com/culturedigitalskills/2027-ai-and-copyright/edit/main/episodes/01-copyright-and-ai.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -396,7 +396,38 @@ terms of use allow.</li>
 </div>
 </section><section><h2 class="section-heading" id="the-law-and-a-collections-terms-of-use">The law and a collection’s terms of use<a class="anchor" aria-label="anchor" href="#the-law-and-a-collections-terms-of-use"></a></h2>
 <hr class="half-width"><!-- TODO (co-design): why a collection's terms of use or contract can be stricter than the law, and which one applies --></section><section><h2 class="section-heading" id="an-arts-and-humanities-example">An arts and humanities example<a class="anchor" aria-label="anchor" href="#an-arts-and-humanities-example"></a></h2>
-<hr class="half-width"><!-- TODO (co-design): add an arts and humanities example, e.g. a collection, archive or corpus --><div id="challenge-1-identify-the-rights-in-three-items" class="callout challenge">
+<hr class="half-width"><!-- Running example: this scenario continues through all five episodes --><p>Imagine you are an art historian with 40,000 digitised photographs
+from a regional newspaper archive, dated 1920 to 1980. You want to find
+visually similar images across the collection, such as recurring
+compositions, reused press photos and studio styles. Doing this by eye
+would take months.</p>
+<p>A common approach is to use <strong>DINOv2</strong>, an open-weight
+computer vision model released by Meta. DINOv2 turns each image into a
+list of numbers (an <em>embedding</em>) that describes its visual
+features. Images with similar embeddings look alike, so you can cluster,
+search and compare the whole collection.</p>
+<p>Before you start, notice how many rights are involved:</p>
+<ul><li>
+<strong>The photographs.</strong> Each photograph may still be in
+copyright, usually held by the photographer or the newspaper that
+employed them. In the UK, copyright in a photograph generally lasts
+until 70 years after the photographer’s death, so many of these images
+are likely still protected.</li>
+<li>
+<strong>The archive’s terms.</strong> The archive that digitised the
+collection sets terms of use for its digital copies. These are a
+contract, and they can add conditions on top of the law.</li>
+<li>
+<strong>The model.</strong> DINOv2 was trained by Meta on a large
+collection of images (copying for training). It comes with its own
+licence.</li>
+</ul><p>Using DINOv2 on the collection involves all three points where
+copying happens: the model was built by <strong>copying for
+training</strong>, you will make copies of the photographs for
+<strong>analysis</strong>, and the embeddings and clusters you produce
+are <strong>outputs</strong>. The following episodes follow this project
+step by step.</p>
+<div id="challenge-1-identify-the-rights-in-three-items" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
@@ -414,7 +445,7 @@ items</h3>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <!-- TODO (co-design): add notes on possible answers, or leave empty for discussion exercises -->
 </div>
@@ -498,8 +529,8 @@ any links that you are not going to use.
   "url": "https://culturedigitalskills.github.io/2027-ai-and-copyright/instructor/01-copyright-and-ai.html",
   "identifier": "https://culturedigitalskills.github.io/2027-ai-and-copyright/instructor/01-copyright-and-ai.html",
   "dateCreated": "2026-11-21",
-  "dateModified": "2026-11-24",
-  "datePublished": "2026-11-24"
+  "dateModified": "2026-11-25",
+  "datePublished": "2026-11-25"
 }
 
   </script><script>
