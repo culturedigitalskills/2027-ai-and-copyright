@@ -40,7 +40,22 @@ exercises: 15
 
 ## An arts and humanities example
 
-<!-- TODO (co-design): add an arts and humanities example, e.g. a collection, archive or corpus -->
+<!-- Running example, continued from episode 3 -->
+
+DINOv2 has now processed the 40,000 photographs on Isambard-AI. You have two kinds of output:
+
+- **Embeddings:** a long list of numbers for each photograph, describing its visual features. They are not pictures, and you cannot read them like an image.
+- **Your findings:** the clusters of similar images, and what you conclude from them about photographic styles and the reuse of images.
+
+Who owns these? Your interpretation and your writing about the clusters are your own work, like any other research. The embeddings are less clear. They are produced automatically, and it is an open question whether they attract copyright at all, or whether they could count as reproducing the photographs they describe. DINOv2's Apache 2.0 licence does not claim ownership of what you produce with it.
+
+<!-- TODO (co-design): check the current UK position on computer-generated works before teaching this -->
+
+Whatever the legal position, describe your AI use clearly so that others can follow and repeat your method. A methods statement might read:
+
+> Visual features were extracted using DINOv2 (ViT-L/14, Meta, Apache 2.0 licence) run on the Isambard-AI supercomputer. Images were grouped using [clustering method]. All interpretation of the clusters is the author's own.
+
+Note the exact model version and its licence, and acknowledge Isambard-AI as its operators request. Their documentation gives the wording to use.
 
 ::::::::::::::::::::::::::::::::::::: challenge
 
